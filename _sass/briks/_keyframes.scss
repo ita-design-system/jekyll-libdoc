@@ -1,0 +1,18 @@
+
+@if type-of($briks-keyframes) == map {
+    @each $animation_name, $animation_data in $briks-keyframes {
+        @if type-of(map-get($briks-keyframes, $animation_name)) == map {
+            @keyframes #{$animation_name} {
+                @each $animation_keyframe, $animation_properties in map-get($briks-keyframes, $animation_name) {
+                    @if type-of(map-get(map-get($briks-keyframes, $animation_name), $animation_keyframe)) == map {
+                        #{$animation_keyframe} {
+                            @each $property, $value in map-get(map-get($briks-keyframes, $animation_name), $animation_keyframe) {
+                                #{$property}: $value;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
