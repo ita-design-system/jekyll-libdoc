@@ -139,7 +139,7 @@ $briks-fonts: (
         fallback:    'sans-serif'
     )
 );
-@import '../engine/boot';
+@import 'briks/engine/boot';
 $briks-font-sizes: (
     15: 60,
     14: 54,
