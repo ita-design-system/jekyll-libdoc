@@ -10,7 +10,7 @@
 and $briks-components-prefix != false 
 and $briks-modifiers-prefix != '' 
 and $briks-modifiers-prefix != false 
-and type-of($briks-components-generic) == map {
+and length($briks-components-generic) > 0 {
     // Iterate generic components list
     @each $component_name, $component_data in $briks-components-generic {
         // Component must be enabled
