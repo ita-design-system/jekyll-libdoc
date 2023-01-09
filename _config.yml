@@ -73,7 +73,7 @@ playground:
     metadata:
         # PLAYGROUND LANGUAGE
         # Change the language of the playground, default is en
-        lang: en
+        lang: fr
 
         # PLAYGROUND CACHE
         # Enable or not browser cache for the playground
@@ -110,7 +110,7 @@ playground:
 metadata:
     # LANGUAGE
     # Change the language of the playground, default is en
-    lang: en
+    lang: fr
 
     # CACHE
     # Enable or not browser cache for the playground
