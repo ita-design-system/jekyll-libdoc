@@ -1,0 +1,100 @@
+/*
+    C-FLEX
+    Composant générique CSS ITADS
+    v0.1.0
+    https://github.com/ita-design-system/c-flex.scss
+*/
+// SCSS map
+$briks-components-generic: ( 
+    // Nom du composant
+    flex: ( 
+        // Composant activé true ou false
+        enabled: true, 
+        // Responsive activé true ou false
+        responsive: true, 
+        // Liste des propriétés c-flex par défaut
+        defaults: ( 
+            --ita-gap: 0px,
+            gap: var(--ita-gap),
+            display: flex,
+            flex-wrap: wrap,
+        ),
+        // Rendu: 
+        // c-flex {
+        //     --ita-gap: 0px,
+        //     gap: var(--ita-gap),
+        //     display: flex,
+        //     flex-wrap: wrap,
+        // }
+        // Liste des modifieurs contenant chacun une liste de propriétés qui 
+        // soit surchargent les propriétés par défaut
+        // soit ajoutent des propriétés
+        // soit les deux
+        modifiers: ( 
+            // Axe main
+            // c-flex m-main-start
+            main-start: ( 
+                justify-content: flex-start
+            ),
+            // c-flex m-main-center
+            main-center: ( 
+                justify-content: center
+            ),
+            // c-flex m-main-end
+            main-end: ( // c-flex m-main-end
+                justify-content: flex-end
+            ),
+            // c-flex m-main-space-between
+            main-space-between: ( 
+                justify-content: space-between
+            ),
+            // c-flex m-main-space-around
+            main-space-around: ( 
+                justify-content: space-around
+            ),
+            // c-flex m-main-space-evenly
+            main-space-evenly: ( 
+                justify-content: space-evenly
+            ),
+            // Axe cross
+            // c-flex m-cross-center
+            cross-center: ( 
+                align-items: center
+            ),
+            // c-flex m-cross-baseline
+            cross-baseline: ( 
+                align-items: baseline
+            ),
+            // c-flex m-cross-start
+            cross-start: ( 
+                align-items: flex-start
+            ),
+            // c-flex m-cross-end
+            cross-end: ( 
+                align-items: flex-end
+            ),
+            // Wrap / retour à la ligne
+            // c-flex m-nowrap
+            nowrap: ( 
+                flex-wrap: nowrap
+            ),
+            // c-flex m-wrap-reverse
+            wrap-reverse: ( 
+                flex-wrap: wrap-reverse
+            ),
+            // Direction
+            // c-flex m-column
+            column: ( 
+                flex-direction: column
+            ),
+            // c-flex m-column-reverse
+            column-reverse: ( 
+                flex-direction: column-reverse
+            ),
+            // c-flex m-cross-row-reverse
+            row-reverse: ( 
+                flex-direction: row-reverse
+            )
+        )
+    )
+);
