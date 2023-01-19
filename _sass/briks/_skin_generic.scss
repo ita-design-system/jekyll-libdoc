@@ -1,0 +1,63 @@
+/*
+    C-SKIN
+    v0.1.0
+    Composant générique CSS ITADS
+    https://github.com/ita-design-system/c-skin.scss
+*/
+// SCSS map
+$briks-components-generic: ( 
+    // Nom du composant
+    skin: ( 
+        // Composant activé true ou false
+        enabled: true, 
+        // Responsive activé true ou false
+        responsive: true, 
+        // Liste des propriétés c-skin par défaut
+        defaults: (),
+        // Rendu: 
+        // c-skin {
+        // }
+        // Liste des modifieurs contenant chacun une liste de propriétés qui 
+        // soit surchargent les propriétés par défaut
+        // soit ajoutent des propriétés
+        // soit les deux
+        modifiers: ( 
+            // c-skin m-cur-pointer
+            m-cur-1: (
+                cursor: pointer
+            ),
+            // c-skin m-transition-1
+            m-transition-1: (
+                transition: all 300ms
+            ),
+            // c-skin m-opa-0
+            m-opa-0: (
+                opacity: 0
+            ),
+            // c-skin m-ls-none
+            m-ls-0: (
+                list-style: none
+            ),
+            // c-skin m-b-0
+            m-b-0: (
+                border: none
+            ),
+            // c-skin m-brad-0
+            m-brad-0: (
+                border-radius: 0
+            ),
+            // c-skin m-c-transparent
+            m-c-0: (
+                color: transparent
+            ),
+            // c-skin m-bc-transparent
+            m-bc-0: (
+                background-color: transparent
+            ),
+            // c-skin m-pe-0
+            m-pe-0: (
+                pointer-events: none
+            )
+        )
+    )
+);
