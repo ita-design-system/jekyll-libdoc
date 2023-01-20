@@ -11,9 +11,18 @@ $briks-components-generic: (
         // Composant activé true ou false
         enabled: true, 
         // Responsive activé true ou false
-        responsive: false, 
+        responsive: true, 
         // Liste des propriétés c-skin par défaut
-        defaults: (),
+        defaults: (
+            pseudo-classes: (
+                // c-skin:disabled uniquement pour les <button>
+                disabled: (
+                    pointer-events: none,
+                    color: grey,
+                    background-color: lightgrey
+                )
+            )
+        ),
         // Rendu: 
         // c-skin {
         // }
@@ -23,7 +32,7 @@ $briks-components-generic: (
         // soit les deux
         modifiers: ( 
             // c-skin m-cur-pointer
-            cur-1: (
+            cur-pointer: (
                 cursor: pointer
             ),
             // c-skin m-transition-1
@@ -35,7 +44,7 @@ $briks-components-generic: (
                 opacity: 0
             ),
             // c-skin m-ls-none
-            ls-0: (
+            ls-none: (
                 list-style: none
             ),
             // c-skin m-b-0
@@ -54,9 +63,15 @@ $briks-components-generic: (
             bc-0: (
                 background-color: transparent
             ),
-            // c-skin m-pe-0
-            pe-0: (
+            // c-skin m-pe-none
+            pe-none: (
                 pointer-events: none
+            ),
+            // c-skin m-disabled
+            disabled: (
+                pointer-events: none,
+                color: grey,
+                background-color: lightgrey
             )
         )
     )
