@@ -5,7 +5,7 @@
             @if type-of(map-get($data, names-and-values)) == map {
                 @each $name, $value in map-get($data, names-and-values) {
                     .#{$briks-utilities-prefix}#{map-get($data, prefix)}#{$name} {
-                        #{$property}: briks-generic-utility($property, $name, $value) !important;
+                        #{$property}: $value !important;
                     }
 
                     // Pseudo classes
@@ -13,7 +13,7 @@
                         @each $pseudo_class, $enabled in map-get($data, pseudo-classes) {
                             .#{$briks-utilities-prefix}#{map-get($data, prefix)}#{$name}\:#{$pseudo_class} {
                                 &:#{$pseudo_class} {
-                                    #{$property}: briks-generic-utility($property, $name, $value) !important;
+                                    #{$property}: $value !important;
                                 }
                             }
                         }
@@ -29,7 +29,7 @@
                     @if (type-of(map-get($data, pseudo-classes)) == list or type-of(map-get($data, pseudo-classes)) == string) and length(map-get($data, pseudo-classes)) > 0 {
                         @each $pseudo_class, $enabled in map-get($data, pseudo-classes) {
                             .#{$briks-utilities-prefix}#{map-get($data, prefix)}#{$name}\:#{$pseudo_class}:#{$pseudo_class} {
-                                #{$property}: briks-generic-utility($property, $name, $value) !important;
+                                #{$property}: $value !important;
                             }
                         }
                     }
@@ -42,7 +42,7 @@
                             @each $name, $value in map-get($data, names-and-values) {
                                 .#{$briks-utilities-prefix}#{map-get($data, prefix)}#{$name}#{$briks-responsive-prefix}#{$screen-size},
                                 [#{$briks-utilities-prefix}#{map-get($data, prefix)}#{$name}*="#{$screen-size}"] {
-                                    #{$property}: briks-generic-utility($property, $name, $value)  !important;
+                                    #{$property}: $value !important;
                                 }
 
                                 // Pseudo classes
@@ -50,7 +50,7 @@
                                     @each $pseudo_class, $enabled in map-get($data, pseudo-classes) {
                                         .#{$briks-utilities-prefix}#{map-get($data, prefix)}#{$name}\:#{$pseudo_class}#{$briks-responsive-prefix}#{$screen-size}:#{$pseudo_class},
                                         [#{$briks-utilities-prefix}#{map-get($data, prefix)}#{$name}\:#{$pseudo_class}*="#{$screen-size}"]:#{$pseudo_class} {
-                                            #{$property}: briks-generic-utility($property, $name, $value) !important;
+                                            #{$property}: $value !important;
                                         }
                                     }
                                 }
@@ -68,7 +68,7 @@
                                     @each $pseudo_class, $enabled in map-get($data, pseudo-classes) {
                                         .#{$briks-utilities-prefix}#{map-get($data, prefix)}#{$name}\:#{$pseudo_class}#{$briks-responsive-prefix}#{$screen-size}:#{$pseudo_class},
                                         [#{$briks-utilities-prefix}#{map-get($data, prefix)}#{$name}\:#{$pseudo_class}*="#{$screen-size}"]:#{$pseudo_class} {
-                                            #{$property}: briks-generic-utility($property, $name, $value) !important;
+                                            #{$property}: $value !important;
                                         }
                                     }
                                 }
