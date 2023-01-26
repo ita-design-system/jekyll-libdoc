@@ -443,7 +443,9 @@ Y88b  d88P 888  888 888  888 Y88b 888 Y88..88P Y88b 888 d88P      X88
 */
 $briks-shadows: (
     0: none,
-    1: 0px 0px 10px 0px my-color(neutral-100)
+    1: 0px 0px 10px 0px my-color(neutral-300),
+    2: 0px 5px 10px 0px my-color(neutral-300),
+    3: 0px 10px 10px 0px my-color(neutral-300)
 );
 $briks-backgrounds: (); // DEPRECATED
 $briks-keyframes: ();
