@@ -258,31 +258,22 @@ $briks-screen-sizes: (
     FONTS
 */
 $briks-fonts: (
-    lead-700: (
-        type:        'local',
-        filename:    'subset-Sora-Bold',
-        name:        'Sora-Bold',
-        weight:      700,
-        path:        'https://itautomotive-dev.github.io/cosmobilisWeb-ui/fonts/Sora/',
-        // path:        '../fonts/Sora/',
+    lead-400: (
+        type:        'google',
+        name:        'Lexend',
+        weight:      'Regular',
+        fallback:    'sans-serif'
+    ),
+    lead-500: (
+        type:        'google',
+        name:        'Lexend',
+        weight:      'Medium',
         fallback:    'sans-serif'
     ),
     lead-600: (
-        type:        'local',
-        filename:    'subset-Sora-SemiBold',
-        name:        'Sora-SemiBold',
-        weight:      600,
-        path:        'https://itautomotive-dev.github.io/cosmobilisWeb-ui/fonts/Sora/',
-        // path:        '../fonts/Sora/',
-        fallback:    'sans-serif'
-    ),
-    lead-400: (
-        type:        'local',
-        filename:    'subset-Sora-Regular',
-        name:        'Sora-Regular',
-        weight:      400,
-        path:        'https://itautomotive-dev.github.io/cosmobilisWeb-ui/fonts/Sora/',
-        // path:        '../fonts/Sora/',
+        type:        'google',
+        name:        'Lexend',
+        weight:      'Semi-bold',
         fallback:    'sans-serif'
     ),
     mono: ( // Your own font family name for the design system
@@ -320,19 +311,21 @@ $briks-fonts: (
     FONT SIZES
 */
 $briks-font-sizes: (
+    15: 64,
+    14: 56,
     13: 48,
-    12: 40,
-    11: 36,
+    12: 44,
+    11: 38,
     10: 32,
     9: 28,
-    8: 24,
-    7: 20,
-    6: 18,
-    5: 16,
-    4: 14,
-    3: 12,
-    2: 10,
-    1: 8
+    8: 26,
+    7: 24,
+    6: 20,
+    5: 18,
+    4: 16,
+    3: 14,
+    2: 12,
+    1: 10
 );
 $briks-typography: (); // DO NOT USE, DEPRECATED
 
@@ -365,14 +358,9 @@ Y88b  d88P 888 d88P 888  888 Y88b.    888 888  888 Y88b 888      X88
     SPACINGS
 */
 $briks-spacings: (
-    16: 180,
-    15: 136,
-    14: 96,
-    13: 80,
-    12: 70,
-    11: 64,
-    10: 56,
-    9: 48,
+    11: 80,
+    10: 64,
+    9: 56,
     8: 40,
     7: 32,
     6: 24,
@@ -451,11 +439,15 @@ $briks-borders: (
     BORDER RADIUS
 */
 $briks-border-radius: (
-    0: 0,
-    1: 3,
-    2: 6,
-    3: 12,
-    4: 50
+    100: 4,
+    200: 8,
+    300: 12,
+    400: 16,
+    500: 20,
+    600: 24,
+    700: 32,
+    800: 40,
+    900: 56
 );
 /*
 .d8888b.  888                    888
@@ -483,9 +475,12 @@ Y88b  d88P 888  888 888  888 Y88b 888 Y88..88P Y88b 888 d88P      X88
 */
 $briks-shadows: (
     0: none,
-    1: 0px 0px 10px 0px my-color(neutral-300),
-    2: 0px 5px 10px 0px my-color(neutral-300),
-    3: 0px 10px 10px 0px my-color(neutral-300)
+    1: 0px 4px 16px 0px my-color(neutral-300),
+    2: 0px 8px 24px 0px my-color(neutral-300),
+    3: 0px 12px 32px 0px my-color(neutral-300)
+    4: 0px 4px 16px 0px my-color(neutral-400),
+    5: 0px 8px 24px 0px my-color(neutral-400),
+    6: 0px 12px 32px 0px my-color(neutral-400)
 );
 $briks-backgrounds: (); // DEPRECATED
 $briks-keyframes: ();
