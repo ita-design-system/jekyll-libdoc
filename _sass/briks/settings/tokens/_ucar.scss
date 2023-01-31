@@ -425,15 +425,15 @@ $briks-borders: (
     BORDER RADIUS
 */
 $briks-border-radius: (
-    100: 4,
-    200: 8,
-    300: 12,
-    400: 16,
-    500: 20,
-    600: 24,
-    700: 32,
-    800: 40,
-    900: 56
+    1: 4,
+    2: 8,
+    3: 12,
+    4: 16,
+    5: 20,
+    6: 24,
+    7: 32,
+    8: 40,
+    9: 56
 );
 /*
 .d8888b.  888                    888
@@ -461,12 +461,12 @@ Y88b  d88P 888  888 888  888 Y88b 888 Y88..88P Y88b 888 d88P      X88
 */
 $briks-shadows: (
     0: none,
-    1: 0px 4px 16px 0px my-color(neutral-300),
-    2: 0px 8px 24px 0px my-color(neutral-300),
-    3: 0px 12px 32px 0px my-color(neutral-300),
-    4: 0px 4px 16px 0px my-color(neutral-400),
-    5: 0px 8px 24px 0px my-color(neutral-400),
-    6: 0px 12px 32px 0px my-color(neutral-400)
+    1: 0px 4px 16px 0px my-color(grey-light-300),
+    2: 0px 8px 24px 0px my-color(grey-light-300),
+    3: 0px 12px 32px 0px my-color(grey-light-300),
+    4: 0px 4px 16px 0px my-color(grey-light-400),
+    5: 0px 8px 24px 0px my-color(grey-light-400),
+    6: 0px 12px 32px 0px my-color(grey-light-400)
 );
 $briks-backgrounds: (); // DEPRECATED
 $briks-keyframes: ();
