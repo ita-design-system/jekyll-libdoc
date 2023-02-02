@@ -274,10 +274,6 @@ $briks-fonts: (
         name:        'Lexend',
         weight:      'Semi-bold',
         fallback:    'sans-serif'
-    ),
-    mono: ( // Your own font family name for the design system
-        type:        'websafe', // Sets the font type
-        name:        'Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace' // Sets the websafe font family name
     )
 );
 /*
