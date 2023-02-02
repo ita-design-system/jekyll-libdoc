@@ -257,23 +257,32 @@ $briks-screen-sizes: (
     FONTS
 */
 $briks-fonts: (
-    lead-400: (
-        type:        'google',
-        name:        'Lexend',
-        weight:      'Regular',
-        fallback:    'sans-serif'
+    lead-400: ( // Your own font family name for the design system
+        type:        'local', // Sets the type
+        filename:    'Lexend-Regular', // Name of the font file w/o extension
+        name:        'Lexend Regular', // The display name used for compilation, can be any string
+        path:        '../fonts/lexend/', // Relative path to the file or remote URL
+        legacy:      false, // true means woff2 and woff, false means ttf+woff+svg
+        fallback:    'sans-serif', // Name of a websafe font family used as fallback
+        weight:      400, // Recommended but optional font weight
     ),
-    lead-500: (
-        type:        'google',
-        name:        'Lexend',
-        weight:      'Medium',
-        fallback:    'sans-serif'
+    lead-500: ( // Your own font family name for the design system
+        type:        'local', // Sets the type
+        filename:    'Lexend-Medium', // Name of the font file w/o extension
+        name:        'Lexend Medium', // The display name used for compilation, can be any string
+        path:        '../fonts/lexend/', // Relative path to the file or remote URL
+        legacy:      false, // true means woff2 and woff, false means ttf+woff+svg
+        fallback:    'sans-serif', // Name of a websafe font family used as fallback
+        weight:      500, // Recommended but optional font weight
     ),
-    lead-600: (
-        type:        'google',
-        name:        'Lexend',
-        weight:      'Semi-bold',
-        fallback:    'sans-serif'
+    lead-600: ( // Your own font family name for the design system
+        type:        'local', // Sets the type
+        filename:    'Lexend-SemiBold', // Name of the font file w/o extension
+        name:        'Lexend SemiBold', // The display name used for compilation, can be any string
+        path:        '../fonts/lexend/', // Relative path to the file or remote URL
+        legacy:      false, // true means woff2 and woff, false means ttf+woff+svg
+        fallback:    'sans-serif', // Name of a websafe font family used as fallback
+        weight:      600, // Recommended but optional font weight
     )
 );
 /*
