@@ -20,15 +20,15 @@
             $theNextDataValue: map-get($briks-screens, $theNextIndex);
             // First screen size
             @if $dataIndex == 1 {
-                @media (max-width: $theNextDataValue+$briks-unit) { @content; }
+                @media (max-width: $theNextDataValue - 1 + $briks-unit) { @content; }
             } 
             // Last screen size
             @else if $dataIndex == length($briks-screen-sizes) {
-                @media (min-width: map-get($briks-screens, $dataIndex)+$briks-unit) { @content; }
+                @media (min-width: map-get($briks-screens, $dataIndex) + $briks-unit) { @content; }
             } 
             // Any other screen size
             @else {
-                @media (min-width: $dataValue+$briks-unit) and (max-width: $theNextDataValue+$briks-unit) { @content; }
+                @media (min-width: $dataValue + $briks-unit) and (max-width: $theNextDataValue - 1 + $briks-unit) { @content; }
             }
         }
     }
