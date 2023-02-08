@@ -1,0 +1,137 @@
+/*
+    UTILITAIRES GÉNÉRIQUES
+    v0.1.0
+    Configuration des utilitaires génériques CSS ITADS
+    https://github.com/ita-design-system/utilities.scss
+*/
+$briks-utilities: (
+    background: (
+        enabled: true,
+        prefix: 'bg-',
+        names-and-values: (
+            none: none
+        ),
+        // pseudo-classes: (hover, active),
+        responsive: true
+    ),
+    background-color: (
+        enabled: true,
+        prefix: 'bc-',
+        names-and-values: (
+            0: transparent
+        ),
+        // pseudo-classes: (hover),
+        responsive: true
+    ),
+    border: (
+        enabled: true,
+        prefix: 'b-',
+        names-and-values: (
+            0: none
+        ),
+        // pseudo-classes: (hover),
+        responsive: true
+    ),
+    border-top: (
+        enabled: true,
+        prefix: 'bt-',
+        names-and-values: (
+            0: none
+        ),
+        // pseudo-classes: (hover),
+        responsive: true
+    ),
+    border-right: (
+        enabled: true,
+        prefix: 'br-',
+        names-and-values: (
+            0: none
+        ),
+        // pseudo-classes: (hover),
+        responsive: true
+    ),
+    border-bottom: (
+        enabled: true,
+        prefix: 'bb-',
+        names-and-values: (
+            0: none
+        ),
+        // pseudo-classes: (hover),
+        responsive: true
+    ),
+    border-left: (
+        enabled: true,
+        prefix: 'bl-',
+        names-and-values: (
+            0: none
+        ),
+        // pseudo-classes: (hover),
+        responsive: true
+    ),
+    border-radius: (
+        enabled: true,
+        prefix: 'brad-',
+        names-and-values: (
+            0: none
+        ),
+        // pseudo-classes: (hover),
+        responsive: true
+    ),
+    color: (
+        enabled: true,
+        prefix: 'c-',
+        names-and-values: (
+            0: transparent
+        ),
+        // pseudo-classes: (hover),
+        responsive: true
+    ),
+    cursor: (
+        enabled: true,
+        prefix: 'cur-',
+        names-and-values: (
+            pointer: pointer
+        ),
+        // pseudo-classes: (hover),
+        responsive: true
+    ),
+    display: (
+        enabled: true,
+        prefix: 'd-',
+        names-and-values: (
+            block: block,
+            inline-block: inline-block,
+            none: none
+        ),
+        // pseudo-classes: (hover),
+        responsive: true
+    ),
+    list-style: (
+        enabled: true,
+        prefix: 'ls-',
+        names-and-values: (
+            none: none
+        ),
+        // pseudo-classes: (hover),
+        responsive: true
+    ),
+    pointer-events: (
+        enabled: true,
+        prefix: 'pe-',
+        names-and-values: (
+            none: none,
+            auto: auto
+        ),
+        // pseudo-classes: (hover),
+        responsive: true
+    ),
+    visibility: (
+        enabled: true,
+        prefix: 'v-',
+        names-and-values: (
+            hidden: hidden
+        ),
+        // pseudo-classes: (hover),
+        responsive: true
+    )
+);

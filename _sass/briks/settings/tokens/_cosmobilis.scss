@@ -1,0 +1,139 @@
+$briks-css-variables-enabled:           true;
+$briks-css-variables-prefix:            'ita-';
+$briks-unit:                            'px';
+$briks-components-prefix:               'c-';
+$briks-modifiers-prefix:                'm-';
+$briks-utilities-prefix:                'u-';
+$briks-responsive-prefix:               '--';
+$briks-luminance-method:                3;
+$briks-luminance-threshold:             0.5;
+$briks-colors: (
+    primary-500: #FEAE00,
+
+    
+    secondary-500: #FF2D8F,
+
+    tertiary-400: #833F91,
+    tertiary-500: #942CE3,
+    tertiary-600: #DC74F5,
+
+    neutral-100: #000000,
+    neutral-300: #6B6C72,
+    neutral-400: #C1C0C0,
+    neutral-500: #EAEAEA,
+    neutral-800: #F9F9F9,
+    neutral-900: #FFFFFF,
+
+    neutral-translucid-900: rgba(255, 255, 255, 0.5),
+
+    support-success-500: #4CBB72,
+
+    support-warning-500: #F39D1A,
+
+    support-danger-500: #DF3528,
+);
+$briks-screen-sizes: (
+    xs: 0,
+    sm: 608,
+    md: 896,
+    lg: 1080,
+    xl: 1440
+);
+$briks-fonts: (
+    lead-700: (
+        type:        'local',
+        filename:    'subset-Sora-Bold',
+        name:        'Sora-Bold',
+        weight:      700,
+        path:        '../fonts/Sora/',
+        fallback:    'sans-serif'
+    ),
+    lead-600: (
+        type:        'local',
+        filename:    'subset-Sora-SemiBold',
+        name:        'Sora-SemiBold',
+        weight:      600,
+        path:        '../fonts/Sora/',
+        fallback:    'sans-serif'
+    ),
+    lead-500: (
+        type:        'local',
+        filename:    'subset-Sora-Medium',
+        name:        'Sora-Medium',
+        weight:      500,
+        path:        '../fonts/Sora/',
+        fallback:    'sans-serif'
+    ),
+    lead-400: (
+        type:        'local',
+        filename:    'subset-Sora-Regular',
+        name:        'Sora-Regular',
+        weight:      400,
+        path:        '../fonts/Sora/',
+        fallback:    'sans-serif'
+    )
+);
+@import 'briks/engine/boot';
+$briks-font-sizes: (
+    13: 48,
+    12: 40,
+    11: 36,
+    10: 32,
+    9: 28,
+    8: 24,
+    7: 20,
+    6: 18,
+    5: 16,
+    4: 14,
+    3: 12,
+    2: 10,
+    1: 8
+);
+$briks-typography: ();
+$briks-spacings: (
+    16: 180,
+    15: 136,
+    14: 96,
+    13: 80,
+    12: 70,
+    11: 64,
+    10: 56,
+    9: 48,
+    8: 40,
+    7: 32,
+    6: 24,
+    5: 20,
+    4: 16,
+    3: 12,
+    2: 8,
+    1: 4,
+    0: 0,
+);
+$briks-borders: (
+    none: none,
+    thin-neutral-100: 1px solid my-color(neutral-100),
+    thin-neutral-300: 1px solid my-color(neutral-300),
+    thin-neutral-400: 1px solid my-color(neutral-400),
+    thin-dashed-neutral-400: 1px dashed my-color(neutral-400),
+    thin-neutral-500: 1px solid my-color(neutral-500),
+    thin-neutral-900: 1px solid my-color(neutral-900),
+    thin-neutral-translucid-900: 1px solid my-color(neutral-translucid-900),
+    thin-support-success-500: 1px solid my-color(support-success-500),
+    thin-support-warning-500: 1px solid my-color(support-warning-500),
+    thin-support-danger-500: 1px solid my-color(support-danger-500),
+    large-tertiary-400: 4px solid my-color(tertiary-400),
+    large-tertiary-500: 4px solid my-color(tertiary-500),
+    large-tertiary-600: 4px solid my-color(tertiary-600),
+);
+$briks-border-radius: (
+    0: 0,
+    1: 4,
+    2: 12,
+    3: 24,
+    4: 50
+);
+$briks-shadows: ();
+$briks-backgrounds: ();
+$briks-keyframes: ();
+$briks-utilities: ();
+$briks-components-generic: ();
