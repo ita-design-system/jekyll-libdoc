@@ -344,49 +344,7 @@ $briks-spacings: (
     0: 0,
 );
 
-/*
-888888b.                        888                           
-888  "88b                       888                           
-888  .88P                       888                           
-8888888K.   .d88b.  888d888 .d88888  .d88b.  888d888 .d8888b  
-888  "Y88b d88""88b 888P"  d88" 888 d8P  Y8b 888P"   88K      
-888    888 888  888 888    888  888 88888888 888     "Y8888b. 
-888   d88P Y88..88P 888    Y88b 888 Y8b.     888          X88 
-8888888P"   "Y88P"  888     "Y88888  "Y8888  888      88888P' 
-  
-    @type SASS map https://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps
-    @format <BORDER_NAME>: <CSS_BORDER_SHORTHAND> 
-
-    * Use function `my-color(yourColorName)` from $briks-colors to apply your own color.
-    
-    // example
-    $briks-borders: (
-        light: 1px solid my-color(myColorName), // With my-color() function
-        dark: 2px dashed green // Custom color
-    );
-    BORDERS
-*/
-$briks-borders: (
-    18:     1px solid my-color(neutral-900),
-    17:     1px solid my-color(primary-900),
-    16:     1px solid my-color(neutral-800),
-    15:     1px solid my-color(primary-800),
-    14:     1px solid my-color(neutral-700),
-    13:     1px solid my-color(primary-700),
-    12:     1px solid my-color(neutral-600),
-    11:     1px solid my-color(primary-600),
-    10:     1px solid my-color(neutral-500),
-    9:      1px solid my-color(primary-500),
-    8:      1px solid my-color(neutral-400),
-    7:      1px solid my-color(primary-400),
-    6:      1px solid my-color(neutral-300),
-    5:      1px solid my-color(primary-300),
-    4:      1px solid my-color(neutral-200),
-    3:      1px solid my-color(primary-200),
-    2:      1px solid my-color(neutral-100),
-    1:      1px solid my-color(primary-100),
-    0:      none,
-);
+$briks-borders: (); // DEPRECATED
 
 /*
 888888b.                        888                                            888 d8b                   
