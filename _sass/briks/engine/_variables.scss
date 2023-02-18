@@ -24,6 +24,7 @@ $briks-luminance-method-helper: (
 );
 $briks-scope: (
     briks_specific: (
+        content: true,
         selector: true,
         pseudo-classes: true,
         pseudo-elements: true,
