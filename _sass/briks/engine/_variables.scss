@@ -26,7 +26,9 @@ $briks-scope: (
     briks_specific: (
         selector: true,
         pseudo-classes: true,
-        pseudo-elements: true
+        pseudo-elements: true,
+        --ita-fraction: true,
+        --ita-gap: true,
     ),
     dis: (
         align-items: true,
@@ -64,7 +66,6 @@ $briks-scope: (
         place-self: true,
         table-layout: true,
         visibility: true,
-        --ita-gap: true,
         -webkit-box-orient: true,
         -webkit-line-clamp: true,
     ),
@@ -255,8 +256,7 @@ $briks-scope: (
         word-spacing: true,
         writing-mode: true,
         -moz-osx-font-smoothing: true,
-        -webkit-font-smoothing: true,
-        -webkit-appearance: true
+        -webkit-font-smoothing: true
     ),
     skin: (
         animation: true,
@@ -356,5 +356,6 @@ $briks-scope: (
         transition-property: true,
         transition-timing-function: true,
         user-select: true,
+        -webkit-appearance: true
     )
 );
