@@ -175,8 +175,9 @@
     $message: false;
     @if type-of(map-get($briks-scope, $component_name)) == map {
         @if type-of(map-get(map-get($briks-scope, $component_name), $property)) == 'null' {
-            // @warn $component_name + ' : ' + $property;
-            $message: $property + ' is not supported in c-' + $component_name + ' scope';
+            @if type-of(map-get(map-get($briks-scope, briks_specific), $property)) == 'null' {
+                $message: $property + ' is not supported in c-' + $component_name + ' scope';
+            }
         }
     }
     @return $message;
