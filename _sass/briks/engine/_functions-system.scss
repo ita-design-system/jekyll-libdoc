@@ -171,13 +171,11 @@
         @return $value;
     }
 }
-@function briks-scope() {
-    // @if type-of(map-get($briks-scope, $component_name)) == map {
-    //     @if type-of(map-get(map-get($briks-scope, $component_name), $property)) == 'null' {
-    //         // @warn $component_name + ' : ' + $property;
-    //         @warn $property + ' is not supported in c-' + $component_name + ' scope';
-    //     } @else {
-            
-    //     }
-    // }
+@function briks-scope($component_name, $property) {
+    @if type-of(map-get($briks-scope, $component_name)) == map {
+        @if type-of(map-get(map-get($briks-scope, $component_name), $property)) == 'null' {
+            // @warn $component_name + ' : ' + $property;
+            @return $property + ' is not supported in c-' + $component_name + ' scope';
+        }
+    }
 }
