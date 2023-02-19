@@ -30,6 +30,7 @@ and length($briks-components-generic) > 0 {
                         @if $property == 'pseudo-classes' and type-of($value) == map {
                             @each $pseudo_class_name, $pseudo_class_data in $value {
                                 @if type-of($pseudo_class_data) == map {
+
                                     // Optional selector for this pseudo-class on defaults
                                     $optional_selector_pseudo_class: '';
                                     @if type-of(map-get($pseudo_class_data, selector)) == string {
@@ -38,6 +39,11 @@ and length($briks-components-generic) > 0 {
                                     // Pseudo class
                                     &:#{$pseudo_class_name}#{unquote($optional_selector_pseudo_class)} {
                                         @each $pseudo_class_property, $pseudo_class_value in $pseudo_class_data {
+                                            // Détection scope composant
+                                            $briks_scope_check: briks-scope($component_name, $pseudo_class_property);
+                                            @if $briks_scope_check != false {
+                                                @warn $briks_scope_check;
+                                            }
                                             @if $pseudo_class_property == 'pseudo-elements' and type-of($pseudo_class_value) == map {
                                                 // If pseudo class is combined with pseudo element (for example :hover::after)
                                                 @each $pseudo_element_name, $pseudo_element_names_and_values in $pseudo_class_value {
@@ -49,6 +55,11 @@ and length($briks-components-generic) > 0 {
                                                     // Pseudo element
                                                     &#{unquote($optional_selector_pseudo_element)}::#{$pseudo_element_name} {
                                                         @each $pseudo_element_property, $pseudo_element_value in $pseudo_element_names_and_values {
+                                                            // Détection scope composant
+                                                            $briks_scope_check: briks-scope($component_name, $pseudo_element_property);
+                                                            @if $briks_scope_check != false {
+                                                                @warn $briks_scope_check;
+                                                            }
                                                             // Unquote value excepting 'content' property
                                                             @if type-of($pseudo_element_value) == 'string' and $pseudo_element_property != 'content' {
                                                                 $pseudo_element_value: unquote($pseudo_element_value);
@@ -89,6 +100,11 @@ and length($briks-components-generic) > 0 {
                                     // Pseudo element
                                     &#{unquote($optional_selector_pseudo_element)}::#{$pseudo_element_name} {
                                         @each $pseudo_element_property, $pseudo_element_value in $pseudo_element_names_and_values {
+                                            // Détection scope composant
+                                            $briks_scope_check: briks-scope($component_name, $pseudo_element_property);
+                                            @if $briks_scope_check != false {
+                                                @warn $briks_scope_check;
+                                            }
                                             // Unquote value excepting 'content' property
                                             @if type-of($pseudo_element_value) == 'string' and $pseudo_element_property != 'content' {
                                                 $pseudo_element_value: unquote($pseudo_element_value);
@@ -129,6 +145,11 @@ and length($briks-components-generic) > 0 {
                         }
                         &.#{$briks-modifiers-prefix}#{$modifier_name}#{unquote($optional_selector_modifier)} {
                             @each $property, $value in $modifier_data {
+                                // Détection scope composant
+                                $briks_scope_check: briks-scope($component_name, $property);
+                                @if $briks_scope_check != false {
+                                    @warn $briks_scope_check;
+                                }
                                 // Modifier pseudo classes
                                 @if $property == 'pseudo-classes' and type-of($value) == map {
                                     @each $pseudo_class_name, $pseudo_class_data in $value {
@@ -141,6 +162,11 @@ and length($briks-components-generic) > 0 {
                                             // Modifier pseudo class
                                             &:#{$pseudo_class_name}#{unquote($optional_selector_modifier_pseudo_class)} {
                                                 @each $pseudo_class_property, $pseudo_class_value in $pseudo_class_data {
+                                                    // Détection scope composant
+                                                    $briks_scope_check: briks-scope($component_name, $pseudo_class_property);
+                                                    @if $briks_scope_check != false {
+                                                        @warn $briks_scope_check;
+                                                    }
                                                     @if $pseudo_class_property == 'pseudo-elements' and type-of($pseudo_class_value) == map {
                                                         // If pseudo class is combined with pseudo element (for example :hover::after)
                                                         @each $pseudo_element_name, $pseudo_element_names_and_values in $pseudo_class_value {
@@ -152,6 +178,11 @@ and length($briks-components-generic) > 0 {
                                                             // Modifier pseudo element
                                                             &#{unquote($optional_selector_modifier_pseudo_class_pseudo_element)}::#{$pseudo_element_name} {
                                                                 @each $pseudo_element_property, $pseudo_element_value in $pseudo_element_names_and_values {
+                                                                    // Détection scope composant
+                                                                    $briks_scope_check: briks-scope($component_name, $pseudo_element_property);
+                                                                    @if $briks_scope_check != false {
+                                                                        @warn $briks_scope_check;
+                                                                    }
                                                                     // Unquote value excepting 'content' property
                                                                     @if type-of($pseudo_element_value) == 'string' and $pseudo_element_property != 'content' {
                                                                         $pseudo_element_value: unquote($pseudo_element_value);
@@ -192,6 +223,11 @@ and length($briks-components-generic) > 0 {
                                             // Modifier pseudo element
                                             &#{unquote($optional_selector_modifier_pseudo_element)}::#{$pseudo_element_name} {
                                                 @each $pseudo_element_property, $pseudo_element_value in $pseudo_element_names_and_values {
+                                                    // Détection scope composant
+                                                    $briks_scope_check: briks-scope($component_name, $pseudo_element_property);
+                                                    @if $briks_scope_check != false {
+                                                        @warn $briks_scope_check;
+                                                    }
                                                     // Unquote value excepting 'content' property
                                                     @if type-of($pseudo_element_value) == 'string' and $pseudo_element_property != 'content' {
                                                         $pseudo_element_value: unquote($pseudo_element_value);
