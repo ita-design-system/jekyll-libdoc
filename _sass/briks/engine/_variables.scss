@@ -22,7 +22,12 @@ $briks-luminance-method-helper: (
     2: 'Web Content Accessibility Guidelines (WCAG) 2.0 <a href=\'https://www.w3.org/TR/WCAG20/\' target=\'_blank\'>https://www.w3.org/TR/WCAG20/</a>',
     3: 'Luma sRGB <a href=\'https://en.wikipedia.org/wiki/Rec._709\' target=\'_blank\'>https://en.wikipedia.org/wiki/Rec._709</a>'
 );
+/*
+    BRIKS SCOPE
+    List of components with their associated properties 
+*/
 $briks-scope: (
+    // System properties
     briks_specific: (
         content: true,
         selector: true,
@@ -31,6 +36,7 @@ $briks-scope: (
         --ita-fraction: true,
         --ita-gap: true,
     ),
+    // Associated properties with c-dis
     dis: (
         align-items: true,
         backface-visibility: true,
@@ -70,6 +76,7 @@ $briks-scope: (
         -webkit-box-orient: true,
         -webkit-line-clamp: true,
     ),
+    // Associated properties with c-dim
     dim: (
         align-self: true,
         aspect-ratio: true,
@@ -154,6 +161,7 @@ $briks-scope: (
         scroll-timeline-name: true,
         width: true,
     ),
+    // Associated properties with c-pos
     pos: (
         bottom: true,
         left: true,
@@ -170,6 +178,7 @@ $briks-scope: (
         translate: true,
         z-index: true,
     ),
+    // Associated properties with c-txt
     txt: (
         column-count: true,
         column-fill: true,
@@ -260,6 +269,7 @@ $briks-scope: (
         -moz-osx-font-smoothing: true,
         -webkit-font-smoothing: true
     ),
+    // Associated properties with c-skin
     skin: (
         animation: true,
         animation-delay: true,
