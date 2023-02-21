@@ -257,6 +257,15 @@ $briks-screen-sizes: (
     FONTS
 */
 $briks-fonts: (
+    lead-300: ( // Your own font family name for the design system
+        type:        'local', // Sets the type
+        filename:    'Lexend-Light', // Name of the font file w/o extension
+        name:        'Lexend Light', // The display name used for compilation, can be any string
+        path:        '../fonts/lexend/', // Relative path to the file or remote URL
+        legacy:      false, // true means woff2 and woff, false means ttf+woff+svg
+        fallback:    'sans-serif', // Name of a websafe font family used as fallback
+        weight:      300, // Recommended but optional font weight
+    ),
     lead-400: ( // Your own font family name for the design system
         type:        'local', // Sets the type
         filename:    'Lexend-Regular', // Name of the font file w/o extension
@@ -283,6 +292,24 @@ $briks-fonts: (
         legacy:      false, // true means woff2 and woff, false means ttf+woff+svg
         fallback:    'sans-serif', // Name of a websafe font family used as fallback
         weight:      600, // Recommended but optional font weight
+    ),
+    lead-700: ( // Your own font family name for the design system
+        type:        'local', // Sets the type
+        filename:    'Lexend-Bold', // Name of the font file w/o extension
+        name:        'Lexend Bold', // The display name used for compilation, can be any string
+        path:        '../fonts/lexend/', // Relative path to the file or remote URL
+        legacy:      false, // true means woff2 and woff, false means ttf+woff+svg
+        fallback:    'sans-serif', // Name of a websafe font family used as fallback
+        weight:      700, // Recommended but optional font weight
+    ),
+    lead-800: ( // Your own font family name for the design system
+        type:        'local', // Sets the type
+        filename:    'Lexend-ExtraBold', // Name of the font file w/o extension
+        name:        'Lexend ExtraBold', // The display name used for compilation, can be any string
+        path:        '../fonts/lexend/', // Relative path to the file or remote URL
+        legacy:      false, // true means woff2 and woff, false means ttf+woff+svg
+        fallback:    'sans-serif', // Name of a websafe font family used as fallback
+        weight:      800, // Recommended but optional font weight
     )
 );
 /*
