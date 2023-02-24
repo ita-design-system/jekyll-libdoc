@@ -35,6 +35,9 @@ $briks-scope: (
         pseudo-elements: true,
         --ita-fraction: true,
         --ita-gap: true,
+        --ita-total-amount-of-fractions: true,
+        --ita-item-default-width: true,
+        --ita-item-offset: true
     ),
     // Associated properties with c-dis
     dis: (
