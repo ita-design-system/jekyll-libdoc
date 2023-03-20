@@ -273,6 +273,10 @@ $briks-fonts: (
         legacy:      false, // true means woff2 and woff, false means ttf+woff+svg
         fallback:    'sans-serif', // Name of a websafe font family used as fallback
         weight:      700, // Recommended but optional font weight
+    ),
+    mono: ( // Your own font family name for the design system
+        type:        'websafe', // Sets the font type
+        name:        'Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace' // Sets the websafe font family name
     )
 );
 /*
