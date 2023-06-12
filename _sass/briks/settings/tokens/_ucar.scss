@@ -301,6 +301,15 @@ $briks-fonts: (
         legacy:      false, // true means woff2 and woff, false means ttf+woff+svg
         fallback:    'sans-serif', // Name of a websafe font family used as fallback
         weight:      700, // Recommended but optional font weight
+    ),
+    lead-900: ( // Your own font family name for the design system
+        type:        'local', // Sets the type
+        filename:    'Lexend-Black', // Name of the font file w/o extension
+        name:        'Lexend Black', // The display name used for compilation, can be any string
+        path:        '../fonts/lexend/', // Relative path to the file or remote URL
+        legacy:      false, // true means woff2 and woff, false means ttf+woff+svg
+        fallback:    'sans-serif', // Name of a websafe font family used as fallback
+        weight:      900, // Recommended but optional font weight
     )
 );
 /*
